@@ -3,7 +3,8 @@
  * SysConfig Configuration
  *
  * If you have a ./config/autoload/ directory set up for your project, you can
- * drop this config file in it and change the values as you wish.
+ * copy this file, rename it to sysconfig.global.php in it and change the values as you wish.
+ * You can keep a private file that you can exclude from VCS by renaming it to sysconfig.local.php
  */
 return array(
     'shopsys' => array(
