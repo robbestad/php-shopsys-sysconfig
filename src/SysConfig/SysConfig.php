@@ -73,6 +73,7 @@ class SysConfig
             __DIR__ . "/../config/",
             __DIR__ . "/../../config/",
             __DIR__ . "/../../../../config/autoload/",
+            __DIR__ . "/../../../../../config/autoload/",
         );
         foreach ($folders as $folder) {
             $fileMap = [];
