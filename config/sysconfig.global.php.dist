@@ -17,7 +17,9 @@ return array(
                 'name' => 'Shopsys',
                 'name' => 'Shopsys',
                 'settings' => array(
-                    'debug' => true
+                    'debug' => true,
+                    'time_limit_actions' => 3600,
+                    'time_limit_default' => 360,
                     )
             ),
         ),

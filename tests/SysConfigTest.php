@@ -46,5 +46,12 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('bool', $SysConfig->getShopDebugMode());
     }
 
+    public function testCanGetTimeLimits()
+    {
+        $SysConfig= new SysConfig();
+        $this->assertInternalType('int', $SysConfig->getTimeLimitActions());
+        $this->assertInternalType('int', $SysConfig->getTimeLimitDefault());
+    }
+
 
 }

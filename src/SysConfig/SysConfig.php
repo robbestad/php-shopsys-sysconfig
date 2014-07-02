@@ -26,6 +26,14 @@ class SysConfig
         return $this->config["shopsys"]["shop_details"]["default"]["settings"]["debug"];
     }
 
+    public function getTimeLimitActions(){
+        return $this->config["shopsys"]["shop_details"]["default"]["settings"]["time_limit_actions"];
+    }
+
+    public function getTimeLimitDefault(){
+        return $this->config["shopsys"]["shop_details"]["default"]["settings"]["time_limit_default"];
+    }
+
 
 
 
