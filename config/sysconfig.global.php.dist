@@ -15,7 +15,11 @@ return array(
             'default' => array(
                 'url' => '127.0.0.1',
                 'name' => 'Shopsys',
-            )
+                'name' => 'Shopsys',
+                'settings' => array(
+                    'debug' => true
+                    )
+            ),
         ),
 
 
