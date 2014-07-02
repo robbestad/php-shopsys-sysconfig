@@ -10,10 +10,14 @@ class SysConfig
 
     public function __construct()
     {
-        $this->config = $this->getConfig();
+        $this->config = $this->_getConfig();
     }
 
-    public function getConfig()
+    public function getShopName(){
+        return $this->config["shopsys"]["shop_details"]["default"]["name"];
+    }
+
+    private function _getConfig()
     {
         /*
         * Select the correct config file.

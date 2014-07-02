@@ -28,4 +28,10 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('array', $this->config["shopsys"]);
     }
 
+    public function testCanGetShopName()
+    {
+        $this->assertInternalType('string', $this->config["shopsys"]["shop_details"]["default"]["name"]);
+    }
+
+
 }
