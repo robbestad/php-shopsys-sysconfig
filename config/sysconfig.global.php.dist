@@ -1,0 +1,26 @@
+<?php
+/**
+ * SysConfig Configuration
+ *
+ * If you have a ./config/autoload/ directory set up for your project, you can
+ * drop this config file in it and change the values as you wish.
+ */
+return array(
+    'shopsys' => array(
+
+        /**
+         * SysConfig Hosts
+         */
+        'shop_details' => array(
+            'default' => array(
+                'url' => '127.0.0.1',
+                'name' => 'Shopsys',
+            )
+        ),
+
+
+    ),
+    /**
+     * End of SysConfig configuration
+     */
+);
