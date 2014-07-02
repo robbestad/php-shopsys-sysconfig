@@ -17,7 +17,7 @@ class SysConfig
         return $this->config["shopsys"]["shop_details"]["default"]["name"];
     }
 
-    public function getDebugSetting(){
+    public function getShopDebugMode(){
         return $this->config["shopsys"]["shop_details"]["default"]["settings"]["debug"];
     }
 
