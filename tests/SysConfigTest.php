@@ -34,6 +34,12 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('string', $SysConfig->getShopName());
     }
 
+    public function testCanGetShopUrl()
+    {
+        $SysConfig= new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getShopUrl());
+    }
+
     public function testCanGetDebugSettings()
     {
         $SysConfig= new SysConfig();
