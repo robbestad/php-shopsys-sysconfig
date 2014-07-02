@@ -21,6 +21,6 @@
         "psr-0": {"SysConfig": "src/"}
     },
     "suggest": {
-        "svenanders/sarrandomwords": "Create Silly Sentences",
+        "svenanders/sarrandomwords": "Create Silly Sentences"
     }
 }
