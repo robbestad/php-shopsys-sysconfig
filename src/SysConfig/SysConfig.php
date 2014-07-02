@@ -15,12 +15,12 @@ class SysConfig
 
     public function getShopName()
     {
-        return $this->config["shopsys"]["shop_details"]["default"]["name"];
+        return $this->config["shopsys"]["shop_details"]["default"]["shop_details"]["name"];
     }
 
     public function getShopUrl()
     {
-        return $this->config["shopsys"]["shop_details"]["default"]["url"];
+        return $this->config["shopsys"]["shop_details"]["default"]["shop_details"]["url"];
     }
 
 
@@ -41,7 +41,7 @@ class SysConfig
 
     public function getDefaultLanguage()
     {
-        return $this->config["shopsys"]["shop_details"]["default"]["language"];
+        return $this->config["shopsys"]["shop_details"]["default"]["shop_front"]["language"];
     }
 
     public function getUseCookies()
@@ -59,9 +59,9 @@ class SysConfig
         return $this->config["shopsys"]["shop_details"]["default"]["settings"]["use_autologin"];
     }
 
-    public function getAutoLoginLifetimeInMS()
+    public function getAutoLoginLifetimeInSeconds()
     {
-        return $this->config["shopsys"]["shop_details"]["default"]["settings"]["autologin_lifetime_ms"];
+        return $this->config["shopsys"]["shop_details"]["default"]["settings"]["autologin_lifetime_seconds"];
     }
 
 
