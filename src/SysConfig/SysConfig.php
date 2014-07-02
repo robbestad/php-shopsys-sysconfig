@@ -44,6 +44,11 @@ class SysConfig
         return $this->config["shopsys"]["shop_details"]["default"]["language"];
     }
 
+    public function getUseCookies()
+    {
+        return $this->config["shopsys"]["shop_details"]["default"]["settings"]["use_cookies"];
+    }
+
     public function getUseSSL()
     {
         return $this->config["shopsys"]["shop_details"]["default"]["settings"]["use_ssl"];

@@ -58,6 +58,12 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('bool', $SysConfig->getUseSSL());
     }
 
+    public function testGetCookieSettings()
+    {
+        $SysConfig= new SysConfig();
+        $this->assertInternalType('bool', $SysConfig->getUseCookies());
+    }
+
     public function testGetAutologinSettings()
     {
         $SysConfig= new SysConfig();
