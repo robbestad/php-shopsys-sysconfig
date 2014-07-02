@@ -17,9 +17,18 @@ return array(
          */
         'shop_details' => array(
             'default' => array(
-                'url' => 'shopadmin.dev',
-                'name' => 'Shopsys',
-                'language' => 'nb_no',
+                'shop_details' => array (
+                    'url' => 'shopadmin.dev',
+                    'name' => 'Shopsys',
+                    'street1' => 'street1',
+                    'street2' => 'street2',
+                    'city' => 'city',
+                    'country' => 'country',
+                    'phone' => 'phone',
+                    'cellphone' => 'cellphone',
+                    'bankaccount' => 'bankaccount',
+                    'organization_number' => 'organization_number',
+                ),
                 'settings' => array(
                     'debug' => true,
                     'time_limit_actions' => 3600,
@@ -27,7 +36,7 @@ return array(
                     'use_ssl' => false,
                     'use_cookies' => true,
                     'use_autologin' => true,
-                    'autologin_lifetime_ms' => 31536000,
+                    'autologin_lifetime_seconds' => 31536000,
                     ),
                 'email' => array(
                     'no_reply' => 'no-reply@shopadmin.dev',
@@ -46,6 +55,7 @@ return array(
                     'max_login_attempts' => 5,
                     'lockout_duration_in_minutes' => 5,
                     'auto_login_duration_in_seconds' => 1728000,
+                    'language' => 'nb_no',
                 ),
                 'recaptcha' => array(
                     'use_recaptcha_on_login' => true,

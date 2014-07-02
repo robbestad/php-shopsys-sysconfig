@@ -73,7 +73,7 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
     public function testGetAutologinLifetimeInMS()
     {
         $SysConfig = new SysConfig();
-        $this->assertInternalType('int', $SysConfig->getAutologinLifetimeInMS());
+        $this->assertInternalType('int', $SysConfig->getAutoLoginLifetimeInSeconds());
     }
 
     public function testCanGetTimeLimits()
