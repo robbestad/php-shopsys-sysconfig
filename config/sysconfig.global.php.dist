@@ -13,13 +13,17 @@ return array(
          */
         'shop_details' => array(
             'default' => array(
-                'url' => '127.0.0.1',
+                'url' => 'shopadmin.dev',
                 'name' => 'Shopsys',
-                'name' => 'Shopsys',
+                'language' => 'nb_no',
                 'settings' => array(
                     'debug' => true,
                     'time_limit_actions' => 3600,
                     'time_limit_default' => 360,
+                    'use_ssl' => false,
+                    'use_cookies' => true,
+                    'use_autologin' => true,
+                    'autologin_lifetime_ms' => 31536000,
                     )
             ),
         ),

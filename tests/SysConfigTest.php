@@ -40,10 +40,34 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('string', $SysConfig->getShopUrl());
     }
 
+    public function testCanGetDefaultLanguage()
+    {
+        $SysConfig= new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getDefaultLanguage());
+    }
+
     public function testCanGetDebugSettings()
     {
         $SysConfig= new SysConfig();
         $this->assertInternalType('bool', $SysConfig->getShopDebugMode());
+    }
+
+    public function testGetSSLSettings()
+    {
+        $SysConfig= new SysConfig();
+        $this->assertInternalType('bool', $SysConfig->getUseSSL());
+    }
+
+    public function testGetAutologinSettings()
+    {
+        $SysConfig= new SysConfig();
+        $this->assertInternalType('bool', $SysConfig->getUseAutoLogin());
+    }
+
+    public function testGetAutologinLifetimeInMS()
+    {
+        $SysConfig= new SysConfig();
+        $this->assertInternalType('int', $SysConfig->getAutologinLifetimeInMS());
     }
 
     public function testCanGetTimeLimits()
