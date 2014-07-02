@@ -5,6 +5,9 @@
  * If you have a ./config/autoload/ directory set up for your project, you can
  * copy this file, rename it to sysconfig.global.php in it and change the values as you wish.
  * You can keep a private file that you can exclude from VCS by renaming it to sysconfig.local.php
+ *
+ * Recaptcha keys: http://www.google.com/recaptcha
+ *
  */
 return array(
     'shopsys' => array(
@@ -25,7 +28,32 @@ return array(
                     'use_cookies' => true,
                     'use_autologin' => true,
                     'autologin_lifetime_ms' => 31536000,
-                    )
+                    ),
+                'email' => array(
+                    'no_reply' => 'no-reply@shopadmin.dev',
+                    'general' => 'general@shopadmin.dev',
+                    'bulk' => 'bulk-mail@shopadmin.dev'
+                ),
+                'password' => array(
+                    'min_password_length' => 7,
+                    'require_number' => true,
+                    'require_special_char' => true,
+                    'allow_username_in_password' => false,
+                ),
+                'shop_front' => array(
+                    'new_accounts_requires_admin_approval' => false,
+                    'new_accounts_requires_email_verification' => false,
+                    'max_login_attempts' => 5,
+                    'lockout_duration_in_minutes' => 5,
+                    'auto_login_duration_in_seconds' => 1728000,
+                ),
+                'recaptcha' => array(
+                    'use_recaptcha_on_login' => true,
+                    'use_recaptcha_when_registering_new_account' => true,
+                    'use_recaptcha_on_x_amount_of_failures' => 3,
+                    'public_key' => '6LczLvYSAAAAAOY7bciYh8RUB1AKn91S23sSskal',
+                    'private_key' => '6LczLvYSAAAAAGpJsK9mvEYj_JFdT70eAJLMcVmE'
+                ),
             ),
         ),
 
