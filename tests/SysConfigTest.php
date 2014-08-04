@@ -8,9 +8,12 @@
 
 namespace SysConfig\tests;
 
+require __DIR__."/../../SysStdLib/src/SysStdLib/SysStdLib.php";
+require __DIR__ . '/../src/SysConfig/SysConfig.php';
+
+use SysStdLib\SysStdLib as SysLib;
 use SysConfig\SysConfig;
 
-require __DIR__ . '/../src/SysConfig/SysConfig.php';
 
 class SysConfigTest extends \PHPUnit_Framework_TestCase
 {
@@ -19,9 +22,11 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
 
     public function __construct()
     {
-        $SysConfig = new SysConfig();
-        $this->config = $SysConfig->getConfig();
+//        $SysConfig = new SysConfig();
+//        $this->config = $SysConfig->getConfig();
+        $this->config = SysLib::getConfig('SysConfig');
     }
+
 
     public function testCanGetConfig()
     {
@@ -32,6 +37,30 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
     {
         $SysConfig = new SysConfig();
         $this->assertInternalType('string', $SysConfig->getShopName());
+    }
+
+    public function testCanGetShopTitle()
+    {
+        $SysConfig = new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getShopTitle());
+    }
+
+    public function testCanGetShopKeywords()
+    {
+        $SysConfig = new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getShopKeywords());
+    }
+
+    public function testCanGetShopDescription()
+    {
+        $SysConfig = new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getShopDescription());
+    }
+
+    public function testCanGetShopSlogan()
+    {
+        $SysConfig = new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getShopSlogan());
     }
 
     public function testCanGetShopUrl()

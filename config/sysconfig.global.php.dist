@@ -29,13 +29,20 @@ return array(
                     'bankaccount' => 'bankaccount',
                     'organization_number' => 'organization_number',
                 ),
+
+                'meta' => array(
+                    'title' => 'title',
+                    'description' => 'description',
+                    'keywords' => 'keywords',
+                    'slogan' => 'slogan',
+                ),
                 'settings' => array(
                     'debug' => true,
                     'time_limit_actions' => 3600,
                     'time_limit_default' => 360,
-                    'use_ssl' => false,
                     'use_cookies' => true,
                     'use_autologin' => true,
+                    'use_ssl' => false,
                     'autologin_lifetime_seconds' => 31536000,
                     ),
                 'email' => array(
@@ -63,6 +70,12 @@ return array(
                     'use_recaptcha_on_x_amount_of_failures' => 3,
                     'public_key' => '6LczLvYSAAAAAOY7bciYh8RUB1AKn91S23sSskal',
                     'private_key' => '6LczLvYSAAAAAGpJsK9mvEYj_JFdT70eAJLMcVmE'
+                ),
+                'social_media' => array(
+                    'facebook' => array(
+                        'appid' => '',
+                        'admins' => '',
+                    ),
                 ),
             ),
         ),
