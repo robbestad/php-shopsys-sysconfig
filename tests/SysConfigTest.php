@@ -193,6 +193,24 @@ class SysConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('int', $SysConfig->getUserAutoLoginDurationInSeconds());
     }
 
+
+
+    /* FACEBOOK */
+
+
+    public function testCanGetGetFBAppID()
+    {
+        $SysConfig = new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getFBAppID());
+    }
+
+    public function testCanGetGetFBAdmins()
+    {
+        $SysConfig = new SysConfig();
+        $this->assertInternalType('string', $SysConfig->getFBAdmins());
+    }
+
+
     /* RECAPTCHA */
 
 
