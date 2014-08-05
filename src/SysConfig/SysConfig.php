@@ -41,6 +41,16 @@ class SysConfig
         return $this->config["shopsys"]["shop_details"]["default"]["meta"]["slogan"];
     }
 
+    public function getFBAppID()
+    {
+        return $this->config["shopsys"]["shop_details"]["default"]["social_media"]["facebook"]["appid"];
+    }
+
+    public function getFBAdmins()
+    {
+        return $this->config["shopsys"]["shop_details"]["default"]["social_media"]["facebook"]["admins"];
+    }
+
 
     public function getShopDebugMode()
     {
